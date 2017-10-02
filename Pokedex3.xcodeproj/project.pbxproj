@@ -22,6 +22,7 @@
 		F6B24EB21F823EAD0070212E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F6B24EB51F823EAD0070212E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F6B24EB71F823EAD0070212E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F6B24EBD1F82423C0070212E /* pokemon.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = pokemon.csv; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +61,7 @@
 				F6B24EB21F823EAD0070212E /* Assets.xcassets */,
 				F6B24EB41F823EAD0070212E /* LaunchScreen.storyboard */,
 				F6B24EB71F823EAD0070212E /* Info.plist */,
+				F6B24EBD1F82423C0070212E /* pokemon.csv */,
 			);
 			path = Pokedex3;
 			sourceTree = "<group>";
