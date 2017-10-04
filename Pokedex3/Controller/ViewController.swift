@@ -73,7 +73,18 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     // MARK: - Collection delegate section
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        //here code
+        var poke = filteredPokemon[indexPath.row]
+        performSegue(withIdentifier: "DetailViewController", sender: poke)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "DetailViewController" {
+            if let detailVC = segue.destination as? DetailViewController {
+                if let poke = sender as? Pokemon {
+                    detailVC.pokemon = poke
+                }
+            }
+        }
     }
 
     // MARK: - Audio section
