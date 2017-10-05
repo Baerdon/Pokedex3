@@ -73,7 +73,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     // MARK: - Collection delegate section
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        var poke = filteredPokemon[indexPath.row]
+        let poke = filteredPokemon[indexPath.row]
         performSegue(withIdentifier: "DetailViewController", sender: poke)
     }
     
