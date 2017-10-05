@@ -105,7 +105,17 @@ class Pokemon {
                 if let defense = dict["defense"] as? Int {
                     self._defense = "\(defense)"
                 }
-
+                if let typesArray = dict["types"] as? [Dictionary<String, String>], typesArray.count > 0 {
+                    self._type = ""
+                    for type in 0..<typesArray.count-1 {
+                        if let name = typesArray[type]["name"] {
+                        self._type = self._type + "\(name.capitalized)/"
+                        }
+                    }
+                    self._type = self._type + "\(typesArray.last!["name"]!.capitalized)"
+                } else {
+                    self._type = ""
+                }
             }
             completed()
         }
