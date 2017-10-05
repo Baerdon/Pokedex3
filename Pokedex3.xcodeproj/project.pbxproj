@@ -22,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F621D7041F84EB6C001E6DA9 /* PokemonH.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = PokemonH.ttf; sourceTree = "<group>"; };
 		F6B24EA81F823EAC0070212E /* Pokedex3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pokedex3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6B24EAB1F823EAD0070212E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F6B24EAD1F823EAD0070212E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -104,6 +105,7 @@
 			children = (
 				F6B24EC61F83C8810070212E /* pokemon.csv */,
 				F6B24ECA1F84BB4C0070212E /* pokemon.ttf */,
+				F621D7041F84EB6C001E6DA9 /* PokemonH.ttf */,
 				F6B24ECB1F84BDBA0070212E /* music.mp3 */,
 				F6B24ECC1F84BDBB0070212E /* music.png */,
 			);
