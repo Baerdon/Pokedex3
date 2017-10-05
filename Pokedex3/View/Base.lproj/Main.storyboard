@@ -197,13 +197,18 @@
                                 </segments>
                                 <color key="tintColor" red="1" green="0.34509803919999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </segmentedControl>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="2" translatesAutoresizingMaskIntoConstraints="NO" id="ZBn-aN-4qj">
-                                <rect key="frame" x="8" y="109" width="125" height="125"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2" translatesAutoresizingMaskIntoConstraints="NO" id="ZBn-aN-4qj">
+                                <rect key="frame" x="8" y="109" width="120" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="8EJ-Kt-gVf"/>
+                                    <constraint firstAttribute="height" constant="120" id="DOX-LQ-3Mg"/>
+                                </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jLh-td-Jmc">
-                                <rect key="frame" x="141" y="109" width="171" height="125"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jLh-td-Jmc">
+                                <rect key="frame" x="128" y="109" width="184" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="PLh-OW-YnD"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -318,11 +323,16 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="sZj-UZ-NfJ" firstAttribute="leading" secondItem="clb-Rn-XEd" secondAttribute="leading" id="Hmv-LH-4WZ"/>
+                            <constraint firstItem="ZBn-aN-4qj" firstAttribute="top" secondItem="fIO-4t-PeY" secondAttribute="bottom" constant="8" id="PCn-ci-cwj"/>
                             <constraint firstItem="sZj-UZ-NfJ" firstAttribute="top" secondItem="Kuz-4Y-Bcq" secondAttribute="top" id="Urv-lL-yvT"/>
                             <constraint firstItem="fIO-4t-PeY" firstAttribute="top" secondItem="sZj-UZ-NfJ" secondAttribute="bottom" constant="8" id="Vda-3L-b64"/>
                             <constraint firstItem="fIO-4t-PeY" firstAttribute="leading" secondItem="clb-Rn-XEd" secondAttribute="leading" constant="8" id="Vj3-af-4Q1"/>
                             <constraint firstItem="sZj-UZ-NfJ" firstAttribute="trailing" secondItem="clb-Rn-XEd" secondAttribute="trailing" id="Vlv-2h-iKG"/>
+                            <constraint firstItem="jLh-td-Jmc" firstAttribute="leading" secondItem="ZBn-aN-4qj" secondAttribute="trailing" id="YGu-CX-VzX"/>
+                            <constraint firstItem="jLh-td-Jmc" firstAttribute="top" secondItem="fIO-4t-PeY" secondAttribute="bottom" constant="8" id="dWY-bN-tkN"/>
                             <constraint firstItem="clb-Rn-XEd" firstAttribute="trailing" secondItem="fIO-4t-PeY" secondAttribute="trailing" constant="8" id="qg3-oX-cKj"/>
+                            <constraint firstItem="ZBn-aN-4qj" firstAttribute="leading" secondItem="clb-Rn-XEd" secondAttribute="leading" constant="8" id="uev-uk-bgq"/>
+                            <constraint firstItem="clb-Rn-XEd" firstAttribute="trailing" secondItem="jLh-td-Jmc" secondAttribute="trailing" constant="8" id="yJY-tB-2su"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="clb-Rn-XEd"/>
                     </view>
