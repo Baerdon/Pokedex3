@@ -28,6 +28,16 @@ class DetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         nameLbl.text = pokemon.name
+        pokemon.downloadPokemonDetail {
+            self.updateUI()
+        }
+    }
+    
+    func updateUI() {
+        baseAttackLbl.text = pokemon.attack
+        defenseLbl.text = pokemon.defense
+        heigthLbl.text = pokemon.height
+        weightLbl.text = pokemon.weight
     }
     
     @IBAction func backBtnPressed(_ sender: UIButton) {
