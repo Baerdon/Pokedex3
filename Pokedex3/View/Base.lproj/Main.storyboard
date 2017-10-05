@@ -31,7 +31,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="65"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pokedex" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E0p-y9-roX">
-                                        <rect key="frame" x="144.5" y="20" width="87.5" height="37"/>
+                                        <rect key="frame" x="143" y="20" width="90.5" height="37"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="37" id="BJ3-1h-Or4"/>
                                         </constraints>
@@ -178,6 +178,9 @@
                                             <constraint firstAttribute="height" constant="26" id="EaY-Ki-hbG"/>
                                         </constraints>
                                         <state key="normal" image="back"/>
+                                        <connections>
+                                            <action selector="backBtnPressed:" destination="TGS-l9-Gwv" eventType="touchUpInside" id="Pjj-HZ-yIE"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="0.34509803919999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -264,7 +267,7 @@
                                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="bottom" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="qAT-aB-Sm0">
                                                         <rect key="frame" x="0.0" y="0.0" width="82.5" height="20"/>
                                                         <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Heigth:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VpG-Gx-Ol0">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Height:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VpG-Gx-Ol0">
                                                                 <rect key="frame" x="0.0" y="0.0" width="54.5" height="20"/>
                                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                                                 <color key="textColor" red="1" green="0.34509803919999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -303,7 +306,7 @@
                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="EpL-9r-O1t">
                                                         <rect key="frame" x="0.0" y="0.0" width="94" height="20"/>
                                                         <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weigth:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yf0-Vb-Ida">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weight:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yf0-Vb-Ida">
                                                                 <rect key="frame" x="0.0" y="0.0" width="57" height="20"/>
                                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                                                 <color key="textColor" red="1" green="0.34509803919999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -405,6 +408,20 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="clb-Rn-XEd"/>
                     </view>
+                    <connections>
+                        <outlet property="baseAttackLbl" destination="nDm-4n-86y" id="1yo-9l-NXd"/>
+                        <outlet property="currentEvoImg" destination="Hom-X4-bX5" id="zXE-kN-JA9"/>
+                        <outlet property="defenseLbl" destination="TtV-1Z-sxB" id="SHG-wd-djf"/>
+                        <outlet property="descriptionLbl" destination="jLh-td-Jmc" id="20f-PS-y7J"/>
+                        <outlet property="evoLbl" destination="Hcy-1O-a7P" id="Rdk-eH-OSx"/>
+                        <outlet property="heigthLbl" destination="6CJ-6q-pEU" id="tG7-av-41h"/>
+                        <outlet property="mainImg" destination="ZBn-aN-4qj" id="ZS4-LQ-mEu"/>
+                        <outlet property="nameLbl" destination="8KE-Uu-qmz" id="RID-C4-rW8"/>
+                        <outlet property="nextEvoImg" destination="lTm-9w-Cp4" id="Vvg-s8-4F9"/>
+                        <outlet property="pokedexIdLbl" destination="bg1-Ae-qOs" id="Wsn-la-tgi"/>
+                        <outlet property="typeLbl" destination="KmC-z2-l4V" id="K8V-we-iJB"/>
+                        <outlet property="weightLbl" destination="JGt-Li-QcZ" id="0OC-bb-Kpg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HFT-tK-QEi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
